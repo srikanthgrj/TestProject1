@@ -24,7 +24,7 @@
          npm install n latest sfdx-cli --global
        displayName: Install Salesforce CLI
      - bash: 
-         sfdx force:auth:jwt:grant --clientid $(org1ClientIDnew) --jwtkeyfile ./buildfiles/server.key --username $(org1UserName) --instanceurl $(org1InstanceURL) -a devOrg
+         sfdx force:auth:jwt:grant --clientid $(org1ClientID) --jwtkeyfile ./buildfiles/server.key --username $(org1UserName) --instanceurl $(org1InstanceURL) -a devOrg
        displayName: Authorize salesforce org
      - bash: 
          sfdx force:source:convert -r ./force-app -d ./toDeploy
